@@ -1,0 +1,51 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--black:#0a0908;--paper:#f4eee5;--red:#8f1d1d;--deep-red:#5e1111;--brown:#6b4631;--brown-light:#b18461;--muted:#74665d;--line:#cfc1b3;--serif:"Playfair Display",Georgia,serif;--sans:"DM Sans",Arial,sans-serif}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--black);font-family:var(--sans);line-height:1.5}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%;height:100%;object-fit:cover}
+.site-header{height:92px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:rgba(243,240,233,.96);position:sticky;top:0;z-index:50;backdrop-filter:blur(10px)}
+.brand{display:flex;align-items:baseline;gap:12px;font-family:var(--serif);font-size:32px;font-weight:700}.brand small,.footer-brand small{font:600 9px var(--sans);letter-spacing:2px}
+.desktop-nav{display:flex;gap:30px;font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase}.desktop-nav a{transition:opacity .2s}.desktop-nav a:hover{opacity:.5}
+.menu-toggle{display:none;border:0;background:none;width:34px}.menu-toggle span{display:block;height:1px;background:#111;margin:7px 0}
+.mobile-menu{display:none}
+.hero{height:calc(100vh - 92px);min-height:620px;position:relative;color:#fff;overflow:hidden}.hero-image{position:absolute;inset:0}.hero-image img{filter:grayscale(20%)}.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.68),rgba(0,0,0,.12) 70%),linear-gradient(0deg,rgba(0,0,0,.35),transparent 50%)}
+.hero-content{position:absolute;left:8vw;top:50%;transform:translateY(-50%);max-width:680px}.eyebrow{font-size:10px;font-weight:700;letter-spacing:2.5px;margin-bottom:20px}.eyebrow.dark{color:#5d5a54}.hero h1{font:600 clamp(65px,9vw,145px)/.86 var(--serif);letter-spacing:-5px}.hero h1 em,h2 em{font-weight:500}.hero-copy{max-width:390px;margin:32px 0;font-size:16px;color:#e5e2dc}.button{display:inline-flex;gap:25px;align-items:center;padding:14px 18px;border:1px solid var(--black);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px}.button-light{border-color:#fff}.button span{font-size:17px}.hero-side-note{position:absolute;right:30px;bottom:28px;font-size:9px;letter-spacing:2px;writing-mode:vertical-rl}
+.ticker{overflow:hidden;background:var(--black);color:white;white-space:nowrap;padding:15px 0}.ticker-track{display:flex;justify-content:space-around;align-items:center;min-width:100%;font-size:10px;font-weight:700;letter-spacing:3px}.ticker b{font-size:12px}
+.section{padding:110px 7vw}.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:60px}.section-heading h2{font:600 clamp(48px,6vw,86px)/.92 var(--serif);letter-spacing:-3px}.text-link{font-size:10px;text-transform:uppercase;font-weight:700;letter-spacing:1px;border-bottom:1px solid;padding-bottom:4px}
+.featured-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}.story-card .card-image{height:390px;position:relative;overflow:hidden}.story-large .card-image{height:540px}.story-card img{transition:transform .7s}.story-card:hover img,.music-grid article:hover img{transform:scale(1.04)}.category{position:absolute;left:15px;bottom:15px;background:white;padding:6px 9px;font-size:9px;font-weight:700;letter-spacing:1.5px}.meta{font-size:9px;color:var(--muted);font-weight:700;letter-spacing:1.5px;margin-top:17px;text-transform:uppercase}.story-card h3{font:600 29px/1.05 var(--serif);margin-top:10px}.story-card .excerpt{font-size:12px;color:#67645e;margin-top:10px}
+.dark-section,.music-section{background:var(--black);color:#f4f1eb}.dark-section .section{padding-bottom:120px}.light-link{color:#fff}.fashion-grid{display:grid;grid-template-columns:1.55fr 1fr;gap:30px}.fashion-main img{height:650px}.fashion-side img{height:500px}.fashion-caption{display:flex;gap:25px;margin-top:20px}.fashion-caption>span{font:500 26px var(--serif);color:#777}.fashion-caption p{font-size:9px;letter-spacing:1.5px}.fashion-caption h3,.fashion-side h3{font:500 34px/1 var(--serif);margin-top:6px}.fashion-side .meta{color:#aaa}
+.split-section{display:grid;grid-template-columns:1fr 1.35fr;gap:80px;align-items:center}.split-title h2{font:600 clamp(52px,6vw,88px)/.9 var(--serif);letter-spacing:-3px}.split-title>p:not(.eyebrow){max-width:400px;color:#65615a;margin:30px 0}.button-dark{margin-top:5px}.culture-feature img{height:580px}.culture-feature h3{font:500 35px var(--serif);margin-top:8px}
+.music-section{background:#111}.music-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}.music-grid img{height:410px}.music-grid .meta{color:#999}.music-grid h3{font:500 28px/1.1 var(--serif);margin-top:8px}
+.compact{margin-bottom:45px}.art-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:60px}.art-feature img{height:570px}.art-feature h3{font:500 38px var(--serif);margin-top:7px}.art-list article{display:grid;grid-template-columns:50px 1fr;gap:20px;padding:28px 0;border-top:1px solid var(--line)}.art-list article:last-child{border-bottom:1px solid var(--line)}.art-list article>span{font:500 22px var(--serif)}.art-list h3{font:500 29px/1.05 var(--serif);margin-top:5px}
+.newsletter{background:#ded9d0;padding:90px 7vw;display:grid;grid-template-columns:1fr 1.2fr;gap:70px;align-items:end}.newsletter h2{font:600 75px/.85 var(--serif);letter-spacing:-3px}.newsletter-form label{display:block;max-width:480px;font:500 22px/1.2 var(--serif);margin-bottom:25px}.input-row{display:flex;border-bottom:1px solid #111}.input-row input{flex:1;border:0;background:transparent;padding:14px 0;font:14px var(--sans);outline:none}.input-row button{border:0;background:none;font:700 10px var(--sans);letter-spacing:1px;text-transform:uppercase;cursor:pointer}.newsletter-form small{display:block;margin-top:12px;font-size:11px}
+footer{background:var(--black);color:#fff;padding:70px 7vw 25px}.footer-top{display:grid;grid-template-columns:1fr 1.5fr 1fr;gap:50px;align-items:start}.footer-brand{font:600 52px var(--serif)}.footer-brand small{display:block}.footer-description{font:15px;max-width:390px;color:#aaa}.socials{display:flex;gap:18px;justify-content:center;font-size:10px;text-transform:uppercase;letter-spacing:1px}.footer-bottom{display:flex;justify-content:space-between;border-top:1px solid #333;margin-top:70px;padding-top:20px;color:#777;font-size:9px;text-transform:uppercase;letter-spacing:1px}
+@media(max-width:800px){.site-header{height:72px;padding:0 6vw}.brand{font-size:27px}.desktop-nav{display:none}.menu-toggle{display:block}.mobile-menu{position:fixed;z-index:40;top:72px;left:0;right:0;background:var(--paper);padding:20px 6vw 30px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:18px;transform:translateY(-120%);transition:transform .3s}.mobile-menu.open{transform:translateY(0)}.mobile-menu a{font:600 25px var(--serif)}
+.hero{height:calc(100vh - 72px);min-height:580px}.hero-content{left:7vw;right:7vw}.hero h1{font-size:72px;letter-spacing:-3px}.hero-copy{font-size:14px}.hero-side-note{display:none}.section{padding:75px 6vw}.section-heading{align-items:start;gap:30px;flex-direction:column;margin-bottom:40px}.section-heading h2{font-size:54px}.featured-grid,.fashion-grid,.split-section,.music-grid,.art-grid,.newsletter{grid-template-columns:1fr;gap:45px}.story-card .card-image,.story-large .card-image{height:390px}.fashion-main img,.fashion-side img,.culture-feature img,.music-grid img,.art-feature img{height:430px}.split-title{order:0}.newsletter{padding:70px 6vw;gap:45px}.newsletter h2{font-size:62px}.footer-top{grid-template-columns:1fr;gap:30px}.socials{justify-content:flex-start}.footer-bottom{margin-top:50px}.ticker-track{gap:28px;justify-content:flex-start;width:max-content;animation:ticker 20s linear infinite}@keyframes ticker{to{transform:translateX(-50%)}}}
+
+/* Àxìs cultural palette */
+.hero-overlay{background:linear-gradient(90deg,rgba(10,9,8,.82),rgba(94,17,17,.22) 58%,rgba(107,70,49,.10)),linear-gradient(0deg,rgba(10,9,8,.45),transparent 50%)}
+.ticker{background:var(--red)}
+.category{background:var(--red);color:#fff}
+.button-dark{background:var(--red);border-color:var(--red);color:#fff}
+.dark-section{background:#170e0b}
+.music-section{background:#100b09}
+.newsletter{background:#d8c1ad}
+footer{background:#090807}
+.socials{justify-content:center!important}
+.socials a{color:#fff;border-bottom:1px solid rgba(255,255,255,.65);padding-bottom:5px;transition:color .2s,border-color .2s}
+.socials a:hover{color:var(--brown-light);border-color:var(--brown-light)}
+.fashion-caption>span{color:var(--red)}
+
+/* Final Áxís Magazine refinements */
+.brand span{font-family:"New York","Iowan Old Style","Baskerville","Times New Roman",serif;}
+.brand{font-family:"New York","Iowan Old Style","Baskerville","Times New Roman",serif;}
+.hero-content .button{transition:transform .25s ease, background-color .25s ease, color .25s ease, box-shadow .25s ease;}
+.hero-content .button:hover{transform:scale(1.08);box-shadow:0 12px 30px rgba(0,0,0,.25);}
+.hero-content{top:auto;bottom:8%;transform:none;}
+.hero-content .eyebrow{margin-bottom:22px;}
+/* Latest content updates */
+.fashion-caption{justify-content:flex-start;align-items:center}.fashion-caption>div{display:none}.fashion-side .meta,.fashion-side h3{display:none}.coming-soon-box{display:flex;align-items:center;justify-content:center;min-height:78px;border:1px solid rgba(0,0,0,.35);font-size:12px;font-weight:700;letter-spacing:3px;background:rgba(255,255,255,.12)}
+
+/* Art & Ideas: category labels removed; article titles remain. */
+.music-caption{margin-top:10px;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;font-weight:700}

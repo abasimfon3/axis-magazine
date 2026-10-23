@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magazines — Áxís Magazine</title>
+  <link rel="stylesheet" href="css/style.css">
+
+<style>
+.magazine-page{
+  min-height:70vh;
+  padding:110px 7vw 130px;
+  background:var(--paper);
+}
+.magazine-intro{
+  max-width:760px;
+  margin:0 auto;
+  text-align:center;
+}
+.magazine-intro h1{
+  font-family:var(--serif);
+  font-size:clamp(48px,7vw,92px);
+  line-height:.95;
+  margin:18px 0 55px;
+  letter-spacing:-3px;
+}
+.issue-card{
+  max-width:620px;
+  margin:0 auto;
+}
+.issue-card img{
+  width:100%;
+  height:auto;
+  object-fit:cover;
+  box-shadow:0 22px 55px rgba(0,0,0,.18);
+}
+.purchase-issue{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:22px;
+  margin-top:25px;
+  padding:16px 25px;
+  background:var(--red);
+  color:#fff;
+  font:700 11px var(--sans);
+  text-transform:uppercase;
+  letter-spacing:1.5px;
+  transition:transform .25s ease, background-color .25s ease;
+}
+.purchase-issue:hover{
+  transform:scale(1.05);
+  background:var(--deep-red);
+}
+.purchase-issue span{font-size:17px}
+</style>
+
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Áxís Magazine home">
+      <span>Áxís</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="magazines.html">Magazines</a>
+    </nav>
+  </header>
+
+  <main class="magazine-page">
+    <section class="magazine-intro">
+      <p class="eyebrow dark">ÁXÍS MAGAZINE</p>
+      <h1>Issue 01 / 2026</h1>
+
+      <div class="issue-card">
+        <img src="images/issue-01-cover.jpg" alt="Áxís Magazine Issue 01 cover">
+        <a class="purchase-issue" href="https://selar.com/m/axismagazine" target="_blank" rel="noopener noreferrer">
+          Purchase Issue 1 <span>↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">Áxís<small>MAGAZINE</small></div>
+      <div class="footer-description">A digital magazine documenting fashion, culture, music and ideas.</div>
+      <div class="socials">
+        <a href="https://www.instagram.com/theaxismagazine" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Áxís Magazine</span>
+      <span>Made for the culture.</span>
+    </div>
+  </footer>
+</body>
+</html>
